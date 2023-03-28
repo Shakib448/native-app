@@ -2,8 +2,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { focusManager, QueryClient } from "@tanstack/react-query";
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import { Stack } from "expo-router";
-import { useAppState } from "../src/query-setup/useAppState";
 import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
+import { useAppState } from "../src/query-setup/useAppState";
 import { useOnlineManager } from "../src/query-setup/useOnlineManager";
 
 function onAppStateChange(status) {
